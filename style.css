@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000;
+    --gray: gray;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.pos-container {
+    position: relative;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+}
+
+.display-buttons-container {
+    position: relative;
+    height: 100%;
+    border: 1px solid red;
+    width: 40%;
+}
+
+.display {
+    position: inherit;
+    height: 60%;
+    width: 100%;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+}
+
+.btn-panel {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: inherit;
+    height: 40%;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--gray);
+}
+
+.btn:hover {
+    background-color: var(--hospital-green);
+}
+
+.product-screen-container {
+    border: 1px solid red;
+    width: 60%;
+    height: 100%;
+}
+
+/* .product-display {
+    position: absolute;
+    top: 40px;
+    margin: 1rem;
+    right: 2rem;
+    height: 80%;
+    width: 55%;
+    background-color: var(--white);
+} */
+
+.header {
+    height: 3rem;
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+}
