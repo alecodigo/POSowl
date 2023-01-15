@@ -5,8 +5,27 @@ class Header extends Component {
 
 }
 Header.template = xml/* xml */`
-    <div class="header">
-       
+    <div class="header-container">
+        <div class="header-order">
+            <a role="boton" href="/">Orders</a>
+        </div>
+        <div class="header-product-search-bar">
+            <form>
+                <label for="search">
+                    <span>Buscar</span>
+                    <input id="search" name="phrase" placeholder="search product..."/>
+                </label>
+                
+            </form>
+        </div>
+        <div class="header-sesion-container">
+            <nav>
+                <ul class="nav-right-section">
+                    <li>Usuario</li>
+                    <li><a role="button" href="/">Cerrar</a></li>
+                </ul>
+            </nav>
+       </div>
     </div>
 `;
 class Buttons extends Component {
@@ -42,7 +61,7 @@ class ProductScreen extends Component {
 }
 ProductScreen.template = xml/* xml */`
     <div class="product-display">
-        <div>ProductScreen</div>
+        <p>ProductScreen</p>
     </div>
 `;
 
