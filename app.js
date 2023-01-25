@@ -9,14 +9,19 @@ Header.template = xml/* xml */`
         <div class="header-order">
             <a role="boton" href="/">Orders</a>
         </div>
+        <div class="header-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
         <div class="header-product-search-bar">
             <form>
                 <label for="search">
                     <span>Buscar</span>
                     <input id="search" name="phrase" placeholder="search product..."/>
                 </label>
-                
             </form>
+            <div class="search-icon">
+                <i class="glyphicon glyphicon-search"></i>
+            </div>
         </div>
         <div class="header-sesion-container">
             <nav>
@@ -62,6 +67,10 @@ class ProductScreen extends Component {
 ProductScreen.template = xml/* xml */`
     <div class="product-display">
         <p>ProductScreen</p>
+        <div class="product-display-btn-box">
+            <button class="btn-pay">PAY</button>
+            <button class="btn-resume">RESUMEN</button>
+        </div>
     </div>
 `;
 
