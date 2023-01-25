@@ -101,25 +101,33 @@ html {
     /* border: 1px solid red; */
 
 }
-
+.header-menu {
+    display: none;
+}
+.search-icon {
+    display: none;
+}
 .header-product-search-bar {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.header-product-search-bar form {
+    display: none;
+}
+.header-sesion-container nav {
+    display: none;
+}
 .header-product-search-bar input {
     outline: none;
     margin-left: .5rem;
     width: 30rem;
 }
-
 .header-sesion-container {
     width: 30%;
     height: auto;
 }
-
 .header-sesion-container {
     /* border: 1px solid blue; */
     display: flex;
@@ -134,8 +142,9 @@ nav .nav-right-section {
     list-style: none;
     /* justify-content: center; */
 }
-
 nav .nav-right-section li {
     margin-right: 1rem;
 }
-
+.product-display-btn-box {
+    display: none;
+}
