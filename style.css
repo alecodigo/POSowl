@@ -105,6 +105,8 @@ a {
     width: 100%;
     height: calc(100% - 100px);
     padding: 2px;
+    /* scroll-behavior: auto; */
+    overflow: auto;
 }
 .product-container img {
     width: 100px;
