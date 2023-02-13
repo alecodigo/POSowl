@@ -61,12 +61,76 @@ Display.template = xml/* xml */`
         <p>Display</p>
     </div>
 `;
-class ProductScreen extends Component {
 
+class ProductScreen extends Component {
+    products = [
+        {
+          id: 1,
+          img: './src/img/coca-cola.png',
+          name: 'Coca-Cola'
+        },
+        {
+          id: 2,
+          img: './src/img/pepsicola.png',
+          name: 'Pepsicola'
+        },
+        {
+            id: 3,
+            img: './src/img/ruffles-queso.png',
+            name: 'ruffles-queso.png',
+        },
+        {
+            id: 4,
+            img: './src/img/doritos.png',
+            name: 'Doritos',
+            description: '420 gr'
+        },
+        {
+            id: 5,
+            img: './src/img/harina-pan.png',
+            name: 'Harina Pan',
+            description: 'Harina de maíz pre-cocida'
+        },
+        {
+            id: 6,
+            img: './src/img/Harinadetrigo.png',
+            name: 'Doña Emilia',
+            description: 'Harina de trigo leudante'
+        },
+        {
+            id: 7,
+            img: './src/img/leche-La-Compania.png',
+            name: 'Doña Emilia',
+            description: 'Harina de trigo leudante'
+        },
+        {
+            id: 8,
+            img: './src/img/sardinas-salsa-tomate-margarita-170g.png',
+            name: 'Sardinas en lata',
+            description: 'sardinas en salsa tomate margarita 170g'
+        },
+        {
+            id: 9,
+            img: './src/img/frescolita.png',
+            name: 'Frescolita',
+            description: 'refresco frescolita 2Ltrs'
+        },
+        {
+            id: 10,
+            img: './src/img/Mortadela-750g.png',
+            name: 'Doña Emilia',
+            description: 'Mortadela en tripa roja PL 750g'
+        },
+
+      ];
 }
 ProductScreen.template = xml/* xml */`
     <div class="product-display">
-        <p>ProductScreen</p>
+        <div class="product-container">
+        <t t-foreach="products" t-as="product" t-key="product.id">
+            <img t-att-src="product.img"/>
+        </t>
+        </div>
         <div class="product-display-btn-box">
             <button class="btn-pay">PAY</button>
             <button class="btn-resume">RESUMEN</button>
@@ -75,9 +139,7 @@ ProductScreen.template = xml/* xml */`
 `;
 
 class MainScreen extends Component {
-
     static components = { Display,  Buttons, ProductScreen, Header};
-
 }
 
 MainScreen.template = xml/* xml */`
